@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.survey.apps.SurveyConfig',
-    'rest_framework'
+    'rest_framework',
+    'material',
+    'formtools'
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'api/survey/templates')
+            os.path.join(BASE_DIR, 'api/survey/templates'),
+            os.path.join(BASE_DIR, 'NetZero/templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {

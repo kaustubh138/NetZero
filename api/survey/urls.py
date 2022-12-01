@@ -1,7 +1,6 @@
 from django.urls import path
-from .views.form_view import form
+from .views import SurveyForm
 
 urlpatterns = [
-    path('survey/form', form),
-    #path('', Endpoints.as_view(), name="endpoints"),
+    path('/form', SurveyForm.as_view(), name="Survey"),
 ]
