@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form method="POST" class="post-form" action="/emp">
+        {% csrf_token %}
+        {{form}}
+    </form>
+</body>
